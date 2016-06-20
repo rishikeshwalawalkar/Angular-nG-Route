@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="orderApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller = "orderCntrl">
+    <div class="container">
+      <div class="row">
+        <div class="col-mid-9">
+          
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>ID No.</th>
+                <th>Details</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>08854</td>
+                <td>Piscataway</td>
+                <td><a href="#ShowOrder/08854">Piscataway</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>07029</td>
+                <td>Harrison</td>
+                <td><a href="#ShowOrder/07029">Harrison</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>95116</td>
+                <td>San Jose</td>
+                <td><a href="#ShowOrder/95116">San Jose</a></td>
+              </tr>
+            </tbody>
+            
+          </table>
+          
+          <div ng-view>
+            The order details goes here...
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      
+    </div>
+    
+    
+  </body>
+
+</html>
